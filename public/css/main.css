@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+
+* {
+  font-family: "Eczar", serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font: 14px;
+  padding: 0;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+#nav {
+  background-color: #1a1a1a;
+  height: 50px;
+  border-bottom: 2px solid black;
+  padding: 0 0 20px 0;
+}
