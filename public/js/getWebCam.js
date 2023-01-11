@@ -32,7 +32,6 @@ function viewVideo(video, context) {
   socket.emit("stream", canvas.toDataURL('image/webp'));
 }
 $(function () {
-  console.log("aaaa")
   let navMedia =
     navigator.mediaDevices.getUserMedia ||
     navigator.mediaDevices.webkitGetUserMedia ||
@@ -49,8 +48,7 @@ $(function () {
         console.log(`Something went wrong!\n\n${err0r}`);
       });
   }
-
   setInterval(() => {
     viewVideo(video, context);
-  }, 70);
+  }, 30);
 });

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream!</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/stream.css"
+    />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="nav">
+      <h1>My greate stream!</h1>
+    </header>
+
+    <main id="room__container">
+      <section id="video__container">
+        <img id="play" />
+        <div id="stream__info">
+          <p id="stream__author">Roman Tkachenko</p>
+        </div>
+      </section>
+
+      <section id="chat__container">
+        <div id="chat__part">
+          <div class="message__wrapper">
+            <p>Roman</p>
+            <p class="message">Hello there!</p>
+          </div>
+
+          <div class="message__wrapper">
+            <p>Vasyl</p>
+            <p class="message">
+              OMG! WOW! It's so cool stream! I waited for it during long time!
+            </p>
+          </div>
+
+          <div class="message__wrapper">
+            <p>Roman</p>
+            <p class="message">thx, bruh</p>
+          </div>
+
+          <div class="message__wrapper">
+            <p>Vitala</p>
+            <p class="message">yeah, guys glad to hear and see you here</p>
+          </div>
+          <div class="message__wrapper">
+            <p>Vitala</p>
+            <p class="message">what are you talking about?</p>
+          </div>
+        </div>
+        <div id="form__container">
+          <form id="message__form">
+            <input type="text" name="message" required />
+          </form>
+        </div>
+      </section>
+      <script
+        src="https://kit.fontawesome.com/62aeaedac6.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="/js/getStream.js"></script>
+    </main>
+  </body>
+</html>
