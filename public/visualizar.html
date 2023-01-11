@@ -13,16 +13,15 @@
     ></script>
   </head>
   <body>
-    <video autoplay="true" id="videoElement"></video>
-    <canvas id="preview" style="display: none;"></canvas>
+    <img id="play" />
     <div id="logger"></div>
     <script>
       var socket = io();
       socket.on("stream", (image) => {
-        var img = document.getElementById("preview");
+        var img = document.getElementById("play");
         img.src = image;
+        console.log(image);
       });
     </script>
-          <script src="./js/getWebCam.js"></script>
   </body>
 </html>
